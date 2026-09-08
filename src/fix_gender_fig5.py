@@ -116,11 +116,11 @@ def generate_fig5():
 
     ax = axes[1, 1]
     perm_rs = age_perm["perm_r"].values
-    obs_r = 0.838
+    obs_r = 0.855
     ax.hist(perm_rs, bins=15, color="lightgray", edgecolor="k", lw=0.3,
             alpha=0.7, label="Null (shuffled ages, n=10)")
     ax.axvline(obs_r, color="red", lw=2,
-               label="Observed r=0.838 (p<0.001, Z=12.3)")
+               label="Observed r=0.855 (p=0.001, Z=12.7)")
     ax.axvline(perm_rs.mean(), color="blue", ls="--",
                label="Null mean={:.3f}".format(perm_rs.mean()))
     ax.set_xlabel("Pearson r (age prediction)", fontsize=11)

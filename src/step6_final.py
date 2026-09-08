@@ -203,7 +203,7 @@ def generate_summary_figure(clock_summary, het_df, matrix, depmap, cand_df):
         f"Tissue clocks trained: {len(clock_summary)}\n"
         f"  Median Pearson r: {clock_summary['pearson_r'].median():.3f}\n"
         f"  Best: {clock_summary.iloc[0]['tissue']} (r={clock_summary.iloc[0]['pearson_r']:.3f})\n\n"
-        f"Unique clock genes: 5,701\n"
+        f"Unique clock genes: {n_genes:,}\n"
         f"  Tissue-specific: 2,491 (44%)\n"
         f"  Shared (>=50% tissues): 9\n\n"
         f"Drugs analyzed: {total_drugs}\n"
