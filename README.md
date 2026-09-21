@@ -4,7 +4,6 @@
 
 This repository contains all analysis code to reproduce the results in:
 
-> Zhang D (2026) Tissue-specific aging clocks map heterogeneous aging-modulatory drug-score patterns across 49 human tissue and cell-line categories.
 
 The pipeline constructs 49 transcriptomic aging clocks (47 tissue types and 2 cell-line categories) from GTEx v8 (948 unique donors contributing samples to the clocks; 17,329 samples), projects 3,926 LINCS L1000 compound-name entries onto each clock, and performs an external DepMap CRISPR concordance analysis after GTEx-based standardization. All data used are publicly available without application.
 
