@@ -44,8 +44,8 @@ Step 5: Statistical validation
   │                              #   DepMap standardization, high-performance category sensitivity
   ├── interaction_test.py        # Drug x category interaction via clock gene-set randomization
   ├── step7_fixes.py             # Significance tiers, gene-sharing null, gene coverage
-  ├── sensitivity_analyses.py    # Weak-clock exclusion, Jaccard concordance, FDR calibration
-  └── fix_reviews.py             # Additional reviewer-response analyses
+  └── sensitivity_analyses.py    # Weak-clock exclusion, Jaccard concordance, FDR calibration
+
 
 Step 6: Prioritization
   ├── step6_prioritize.py        # Candidate drug prioritization
