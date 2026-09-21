@@ -1,4 +1,4 @@
-# Tissue-Specific Aging Clocks Map Heterogeneous Aging-Modulatory Drug-Score Patterns Across 49 Human Tissue and Cell-Line Categories
+# Tissue-specific aging clocks map structured aging-modulatory drug-score patterns across 49 human tissue and cell-line categories
 
 ## Overview
 
