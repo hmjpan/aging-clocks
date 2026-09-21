@@ -84,28 +84,6 @@ python src/step6_prioritize.py
 
 **IMPORTANT:** `rerun_key_analyses.py` is the entry point that reproduces the statistical analyses as reported in the current manuscript (age permutation with 1,000 permutations; conservative p = 0.001). The older `step7_validation.py` and `step7_test_d.py` scripts (10 permutations) are retained for reference only and should NOT be used to reproduce the manuscript's reported p-values.
 
-## Age permutation note
-
-The age permutation test reported in the manuscript uses 1,000 permutations with **fixed model hyperparameters** (alpha = 0.32, l1_ratio = 0.5; artery aorta) for computational tractability. This is a fast re-run version of the full training pipeline; the observed CV r = 0.855 with MAE = 5.2 years, R2 = 0.729, and n_features = 309 for artery aorta are self-consistent and reported in the manuscript. See the Methods section for details.
-
-## Key results
-
-| Metric | Value |
-|---|---|
-| Category clocks trained | 49 (47 tissue types + 2 cell-line categories) |
-| Donors contributing to clocks | 948 |
-| Median Pearson r | 0.543 |
-| Best clock (artery aorta) | r = 0.855, MAE = 5.2 years, R2 = 0.729 |
-| Compound-name entries projected | 3,926 |
-| Unique clock genes | 10,253 |
-| Mixed score directions (\|score\| > 1.0) | 94.2% (descriptive; below random null 97.5%; see Methods) |
-| Strong bidirectional (\|score\| > 2, >=3+3 categories) | 111 (2.8%; p < 0.001 vs null) |
-| Age permutation (1,000 perms) | Z = 12.7, conservative p = 0.001 |
-| Permutation Z (cross-category correlation) | 160.7 |
-| Bootstrap Spearman rho | 0.771 |
-| 34-clock (r >= 0.5) ranking concordance | rho = 0.897 |
-| Jaccard vs hypergeometric concordance | median per-category rho = 0.961 |
-| FDR < 0.05 drug-category pairs | 0.79% |
 
 ## Terminology note
 
